@@ -11,6 +11,9 @@ class Tree:
   def get_older(self):
     self.age += 1
 
+  def leafs_left(self):
+    self.leafs -= 1
+
 my_tree = Tree()
 
 print(my_tree.age)
@@ -19,18 +22,9 @@ my_tree.get_older()
 
 print(my_tree.age)
 
-my_tree.get_older()
+print(my_tree.leafs)
 
-print(my_tree.age)
+my_tree.leafs_left()
 
-my_tree.get_older()
+print(my_tree.leafs)
 
-print(my_tree.age)
-
-my_tree.get_older()
-
-print(my_tree.age)
-
-my_tree.get_older()
-
-print(my_tree.age)
